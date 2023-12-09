@@ -2,228 +2,179 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lehh | Store</title>
 
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- ***BootstrapStyle*** -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css" /> -->
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- ***OwnStyle*** -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
-
-    <!-- header design -->
-    <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <!-- home section design -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello! It's Me</h3>
-            <h1>Sholehuddin</h1>
-            <h3> And I'm a <span class="multilpe-text"></span></h3>
-            <p>Ini adalah portofolio web saya, jendela yang mengungkapkan perjalanan kreatif dan profesional saya. Di
-                ruang ini, saya akan mengajak Anda untuk mengeksplorasi karya dan prestasi yang telah saya raih
-                sepanjang karir saya.</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/sholehuddin.sholehuddin.393?mibextid=ZbWKwL"><i
-                        class='bx bxl-facebook'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="https://www.instagram.com/llehh_27/"><i class='bx bxl-instagram'></i></a>
-                <a href="https://sholehuddin27.blogspot.com/"><i class='bx bxl-blogger'></i></a>
-            </div>
-            <a href="cvku.pdf" class="btn">Download CV</a>
+  <!-- ***Navbar*** -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid py-2 px-5">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/L.jpg" alt="Logo" height="45" class="d-inline-block align-text-top" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav gap-3 mt-3">
+          <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+          <a class="nav-link text-dark" href="#products">Products</a>
+          <a class="nav-link text-dark" href="#contact">Contact</a>
         </div>
-
-        <div class="home-img">
-            <img src="img/home.png" alt="">
+        <div class="d-flex mt-4 gap-2 d-lg-none">
+          <button class="btn rounded-pill w-100 border-1 border-black bg-transparent fw-semibold">
+            Log in
+          </button>
+          <button class="btn w-100 btn-dark rounded-pill">Sign Up</button>
         </div>
-    </section>
+      </div>
+      <form class="me-3 d-flex justify-content-end w-auto d-none d-lg-inline-flex" role="search">
+        <input class="form-control py-2 px-3 rounded-pill border-0" type="search" placeholder="Search"
+          aria-label="Search" />
+      </form>
+      <div class="d-none d-lg-inline">
+        <button class="border-0 bg-transparent fw-semibold">Log in</button>
+        <button type="button" class="btn btn-dark rounded-pill">
+          Sign Up
+        </button>
+      </div>
+    </div>
+  </nav>
 
-    <!-- about section design -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/about.png" alt="">
+  <main>
+    <!-- ***HeaderArticle*** -->
+    <article id="home" class="header-article mx-auto text-center">
+      <h1 class="mb-3">Let's Shop Lehh Store</h1>
+      <p class="mb-4">
+        Connect with this creative community for innovative collaborations.
+      </p>
+      <div class="mt-4 d-flex justify-content-center gap-2">
+        <button type="button" class="btn border border-black rounded-pill">
+          Join us for innovative
+        </button>
+        <a href="#caraosel" class="btn btn-dark rounded-pill"> Let's see </a>
+      </div>
+    </article>
+
+    <!-- ***CarouselArticle*** -->
+    <article id="caraosel" class="caraosel-article px-4">
+      <h1 class="text-center">This is our products.</h1>
+      <div class="d-flex justify-content-between mb-4 text-secondary">
+        <p>Furniture</p>
+        <p>Website</p>
+        <p>Design</p>
+      </div>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-4">
+          <div class="carousel-item active">
+            <img src="assets/images/y.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/timnas.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/images/animasi1.jpg" class="d-block w-100" alt="..." />
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </article>
 
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Software Engineering</h3>
-            <p>Selamat datang di profil saya! Saya adalah seorang pembisinis dengan minat dalam berwirausaha online
-                shop.Saya percaya bahwa setiap proyek adalah kesempatan untuk menciptakan sesuatu yang
-                luar biasa.</p>
-            <a href="#" class="btn">Read More</a>
+    <!-- ***ProductsArticle*** -->
+    <article id="products" class="products-article px-2 pb-5 rounded">
+      <div class="container-fluid text-center">
+        <h1 class="mb-5 mx-auto">Explore related products</h1>
+        <div class="d-flex flex-wrap gap-4 justify-content-center">
+          <div class="card rounded-3 overflow-hidden">
+            <img src="assets/images/1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Popular Item</h5>
+              <p class="card-text text-secondary">Rp.495.000</p>
+              <a href="detailproduct.html" class="btn btn-outline-dark">Add to cart</a>
+            </div>
+          </div>
+          <div class="card rounded-3 overflow-hidden">
+            <img src="assets/images/specs_acc_light_speed_reborn_in_van_deusen_blue_-_1 (1).jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Popular Item</h5>
+              <p class="card-text text-secondary">Rp.490.000</p>
+              <a href="detailproduct.html" class="btn btn-outline-dark">Add to cart</a>
+            </div>
+          </div>
+          <div class="card rounded-3 overflow-hidden">
+            <img src="assets/images/acc.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Popular Item</h5>
+              <p class="card-text text-secondary">Rp.490.000</p>
+              <a href="detailproduct.html" class="btn btn-outline-dark">Add to cart</a>
+            </div>
+          </div>
+          <div class="card rounded-3 overflow-hidden">
+            <img src="assets/images/6.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Popular Item</h5>
+              <p class="card-text text-secondary">Rp.495.000</p>
+              <a href="detailproduct.html" class="btn btn-outline-dark">Add to cart</a>
+            </div>
+          </div>
         </div>
-    </section>
+        <button type="submit" class="btn btn-outline-dark mt-4 rounded-0">
+          See more
+        </button>
+      </div>
+    </article>
 
-    <!-- service section design -->
-    <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt'></i>
-                <h3>Web Development</h3>
-                <p>Web development adalah proses pembangunan dan pemeliharaan situs web atau aplikasi web. Ini
-                    melibatkan sejumlah tindakan, mulai dari pengembangan halaman web statis hingga aplikasi web
-                    dinamis, situs e-commerce, dan aplikasi jaringan sosial. Para pengembang web menggunakan berbagai
-                    bahasa pemrograman dan kerangka kerja (framework) untuk menciptakan fungsi dan tata letak yang
-                    diinginkan dalam sebuah situs web.
-
-                </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bxs-paint'></i>
-                <h3>Graphic Design</h3>
-                <p>Graphic design, atau desain grafis, merujuk pada seni dan praktek menciptakan dan menggabungkan
-                    elemen visual dan teks untuk menyampaikan pesan atau menciptakan karya visual. Desainer grafis
-                    menggunakan berbagai elemen seperti gambar, tipografi, warna, bentuk, dan tekstur untuk menciptakan
-                    desain yang menarik dan efektif. Tujuan utama dari desain grafis adalah untuk menyampaikan pesan
-                    dengan jelas dan memikat audiens target melalui penggunaan elemen-elemen visual.</p>
-                <a href="#" class="btn">Read More</a>
-            </div>
-
-            <div class="services-box">
-                <i class='bx bx-bar-chart-alt'></i>
-                <h3>Digital Marketing</h3>
-                <p>Digital marketing merujuk pada semua strategi pemasaran yang menggunakan media digital atau internet
-                    untuk mencapai tujuan pemasaran. Ini mencakup berbagai teknik dan metode yang digunakan untuk
-                    memasarkan produk, layanan, atau merek kepada audiens target melalui platform online. Digital
-                    marketing melibatkan penggunaan internet dan perangkat digital seperti komputer, ponsel cerdas
-                    (smartphones), tablet, dan platform media sosial untuk menyampaikan pesan pemasaran kepada konsumen.
-                </p>
-                <a href="#" class="btn">Read More</a>
-            </div>
+    <!-- ***ContactArticle*** -->
+    <article id="contact" class="contact-article px-5 py-5 bg-light">
+      <form class="mx-auto text-center py-5" action="">
+        <h1 class="text-center mb-5">
+          Get in touch whit us for more information
+        </h1>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control border-black" id="floatingInput" placeholder="Name" />
+          <label for="floatingInput">Name*</label>
         </div>
-    </section>
-
-    <!-- portfolio section design -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Project</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="img/blog.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Blogger</h4>
-                    <p>Blogger adalah platform blogging yang disediakan oleh Google. Ini memungkinkan pengguna untuk
-                        membuat dan mengelola blog secara gratis. Dengan menggunakan Blogger, pengguna dapat membuat
-                        posting blog, mengedit tata letak, menyesuaikan desain, dan mempublikasikan konten mereka dengan
-                        mudah.</p>
-                    <a href="https://sholehuddin27.blogspot.com/"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/P.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>portofolio</h4>
-                    <p>Ini adalah portofolio web saya, jendela yang mengungkapkan perjalanan kreatif dan profesional
-                        saya. Di ruang ini, saya akan mengajak Anda untuk mengeksplorasi karya dan prestasi yang telah
-                        saya raih sepanjang karir saya.</p>
-                    <a href="https://lehh27.github.io/"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/crud.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Online Shop</h4>
-                    <p>Ini adalah project saya dari pelajaran Pemograman Web dan Perangkat Bergerak,yaitu membuat
-                        website online shop dengan tema sport.</p>
-                    <a href="lehh.github.io"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/DB.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Cara Membuat DataBase</h4>
-                    <p>Saya akan memberi Anda contoh cara membuat database menggunakan bahasa SQL (Structured Query
-                        Language), yang merupakan bahasa standar untuk mengelola database. Untuk tujuan contoh, saya
-                        akan menggunakan database MySQL, yang merupakan salah satu sistem manajemen basis data (DBMS)
-                        yang populer.</p>
-                    <a href="https://sholehuddin27.blogspot.com/2023/08/cara-membuat-database-menggunakan.html"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/Login.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Hal Login</h4>
-                    <p>Ini adalah project saya dengan membuat halaman login untuk website online shop saya. </p>
-                    <a href="http://127.0.0.1:5500/"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="img/PB.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Pengertian DataBase</h4>
-                    <p>Database adalah suatu sistem yang dirancang untuk mengorganisir, menyimpan, dan mengelola data secara efisien.</p>
-                    <a href="https://sholehuddin27.blogspot.com/2023/02/pengantar-database.html"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-            </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control border-black" id="floatingInput" placeholder="Subject" />
+          <label for="floatingInput">Subject*</label>
         </div>
-    </section>
-
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Addres">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
-
-    <!-- footer design  -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by lehh27 | All Right Reserved.</p>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control border-black" id="floatingInput" placeholder="Email" />
+          <label for="floatingInput">Email*</label>
         </div>
-
-        <div class="footer-iconTop">
-            <a href=""><i class='bx bx-link-external'></i></a>
+        <div class="form-floating mb-3">
+          <textarea class="form-control border-black" placeholder="Leave a comment here" id="Message"
+            style="height: 100px"></textarea>
+          <label for="Message">Message*</label>
         </div>
-    </footer>
+        <button type="submit" class="btn btn-dark mt-2">Submit Now</button>
+      </form>
+    </article>
+  </main>
+  <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script> -->
 
-
-    <!-- scroll reveal  -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- typed js  -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-
-    <!-- custom js -->
-    <script src="js/script.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
